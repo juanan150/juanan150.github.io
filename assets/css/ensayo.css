@@ -1,0 +1,43 @@
+*{
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    background-color: aqua;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background-image: url("https://unsplash.com/photos/E0AHdsENmDg");
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.main--photo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+}
+
+.main--photo img{
+    width: 100%;
+    border-radius: 50%;
+    border-style: solid;
+    border-color: white;
+    border-width: 5px;
+}
+
+.main--info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;    
+}

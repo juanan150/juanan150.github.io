@@ -26,7 +26,7 @@ body {
     background-size: contain;
 }
 
-.main--photo {
+.main__photo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,7 +34,7 @@ body {
     margin-bottom: 30px;
 }
 
-.main--photo img {
+.main__photo img {
     width: 100%;
     border-radius: 50%;
     border-style: solid;
@@ -42,7 +42,7 @@ body {
     border-color: white;
 }
 
-.main--info {
+.main__info {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,9 +51,46 @@ body {
     color: white;
 }
 
-.main--footer {
+.main__footer {
     font-size: 14px;
     margin-top: 5%;
     padding-right: 15px;
-    ;
+    color: white;
+}
+
+.main__footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.main__footer a:hover {
+    text-decoration: underline;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 600px;
+        height: 100vh;
+        object-fit: cover;
+        background-size: cover;
+    }
+
+    .main__photo {
+        width: 70%
+    }
+
+    .main__info {
+        font-size: 32px;
+    }
+
+    .main__footer {
+        font-size: 18px;
+        margin-top: 40%;
+        padding: 0;
+    }
+
+    .main__footer a {
+        text-decoration: underline;
+    }
 }
